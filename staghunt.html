@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Le dilemmme du prisonier</title>
+    <link rel="stylesheet" type="text/css" href="stag.css">
+</head>
+<body>
+      <main>
+        
+        <nav class="navbar">
+          <ul>
+            <li><a href="main.html" onclick="restart()"> &#128584; Home</a></li>
+            
+          </ul>
+        </nav>
+        
+
+    </main>
+    <div id="box">
+	 <div id="start">
+     <p>Welcome to The game of :<h1 id="title"> Stag Hunt </h1> </p>
+     <button id="start" >START</button>
+     </div>
+
+     <div id="instruction">
+     <img id="instruction" src="image/instruction.png">
+     <br>
+     <button id="gotit" >Got it </button></b>
+     </div> 
+
+     <div id="game">
+      <h2 id="g" > whats your choice </h2>
+        <table class="choice" >
+    <tr>
+       <td><img src="image/stag.jpg"> </td>
+       <td><img src="image/rabbit.jpg"></td>
+   </tr>
+   <tr>
+      <td> <button id="stag" >Stag</button></td>
+       <td><button id="rabbit"> Rabbit</button></td>
+   </tr>
+</table>
+     </div> 
+
+     <div id="result" >
+        <p id="re"></p>
+     	<table class="blueTable" >
+     		<tr>
+     			<td> Player </td>
+     			<td> Points </td>
+     		</tr>
+     		<tr >
+     			<td id="player" > You </td>
+                <td id="player1gain" > 0 </td>
+     		</tr>
+            <tr >
+                <td id="player" > Computer </td>
+                <td id="player2gain" > 0 </td>
+            </tr>
+     	</table>
+     	<button id="round" > Next Round </button>
+     	<button id="restart" > Restart  </button>
+     </div>
+
+
+
+
+     <script type="text/javascript" src="jquery.js"></script>
+
+
+  
+
+     <script type="text/javascript">
+        var choice;
+     	var player1;
+     	var player2;
+     	var gain1 = 0 ;
+     	var gain2 = 0 ;
+
+   $(document).ready(function() {
+        $('#instruction').hide();
+        $('#hint').hide();
+        $('#game').hide();
+        $('#result').hide();
+   });
+
+      $('#start').on('click',function(){
+               $('#start').hide();
+               $('#instruction').show();
+      });  
+
+      $('#gotit').on('click',function(){
+               $('#instruction').hide();
+               $('#game').show();
+      });  
+   
+      $('#stag').on('click',function(){
+               $('#game').hide();
+               move();
+               result1();
+               $('#result').show();
+      });  
+
+      $('#rabbit').on('click',function(){
+               $('#game').hide();
+               move();
+               result2();
+               $('#result').show();
+      }); 
+
+
+
+
+       function move(){
+        choice =  1+Math.floor((Math.random() * 2));
+       
+}
+       function result1(){
+                     if (choice==1) {
+                   $("#re").html("The other player choose stag too");
+                   gain1= gain1 + 2;
+                   gain2= gain2 + 2;
+                   $("#player1gain").html(gain1);
+                   $("#player2gain").html(gain2);
+                     }
+                     else {
+                        $("#re").html("The other player choose rabbit ");
+                   gain1 = gain1 +  0;
+                   gain2=  gain2 +  3;
+                   $("#player1gain").html(gain1);
+                   $("#player2gain").html(gain2);
+                     }
+       }
+
+       function result2(){
+                     if (choice==1) {
+                   $("#re").html("The other player choose rabbit too");
+                   gain1 = gain1 +   1;
+                   gain2=   gain2 +  1;
+                   $("#player1gain").html(gain1);
+                   $("#player2gain").html(gain2);
+                     }
+                     else {
+                        $("#re").html("The other player choose stag ");
+                   gain1 = gain1 +  3;
+                   gain2=   gain2 + 0;
+                   $("#player1gain").html(gain1);
+                   $("#player2gain").html(gain2);
+                     }
+       }
+      $('#round').on('click',function(){
+               $('#result').hide();
+               $('#game').show();
+      });
+    $('#restart').on('click',function(){
+       $('#result').hide();
+       $('#start').show();
+       int();
+});
+    function int (){
+        gain1 = 0;
+        gain2 = 0;
+    }
+
+ 
+     </script>
+                
+</div>
+</body>
+</html>

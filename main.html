@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> game site </title>
+
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+
+
+</head>
+<body>
+		<main>
+				
+				<nav class="navbar">
+					<ul>
+						<li><a href="main.html" onclick="restart()"> &#128584; Home</a></li>
+						
+					</ul>
+				</nav>
+				
+
+		</main>
+<span id="box"> 	
+
+
+<span id="box1" >
+<p class="w3-center" id="demotext">new</p>
+<div class="new" >
+<div class="w3-content w3-section" id="1" >
+  <img class="mySlides" id="img" src="image/CM.jpg" >
+  <img class="mySlides" id="img" src="image/FOR.jpg" >
+  <img class="mySlides" id="img" src="image/SP.jpg">
+</div>
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+    </span>
+	<div id="box2" >
+		   <p id="demotext">GAMES</p>
+		<div class="gallery">
+	       <a target="_blank" href="tictactoe.html">
+	       <img src="image/tic.png" alt="Trolltunga Norway" width="300" height="200">
+	       </a>
+	       <div class="desc"> tic tac toe</div>
+	    </div>
+
+		<div class="gallery">
+		    <a target="_blank" href="cross.html">
+		    <img src="image/cross.png" alt="Forest" width="600" height="400">
+		    </a>
+		    <div class="desc">crosswords</div>
+		</div>
+
+	    <div class="gallery">
+	        <a target="_blank" href="flappy.html">
+	        <img src="image/flappy.jpg" alt="Northern Lights" width="300" height="200">
+	        </a>
+	        <div class="desc">flappy bird</div>
+	    </div>
+	     <div class="gallery">
+	       <a target="_blank" href="staghunt.html">
+	       <img src="image/stag.jpg" alt="Trolltunga Norway" width="300" height="200">
+	       </a>
+	       <div class="desc"> stag hunt </div>
+	    </div>
+
+	</div>
+</span>
+
+<div id="about"  >
+	<h1 >about us </h1>
+	<img  id="ensa" src="image/MIN.jpg">
+	<p id="p" >this webpage has been developped by students as a poreject </p>
+</div>
+
+
+<footer>
+	
+</footer>
+
+</body>
+</html>

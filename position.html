@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Experiment</title>
+<style type="text/css">
+	body {
+background-color: #CCFF66;
+font-size: 100%;
+font-family: Arial, Verdana;
+}
+
+.ep {
+width:100px;
+height: 100px;
+margin: 30px;
+padding: 30px;
+border: 5px solid black;
+background-color: #668033;
+text-align: center;
+}
+
+#fixed {
+position:fixed;
+top:30px;
+right:5px;
+}
+
+#relative {
+position: relative;
+left: 50px;
+}
+
+#absolute {
+position:absolute;
+left:50px;
+}
+</style>
+</head>
+<body>
+
+<div class="ep" id="fixed">Fixed</div>
+<div class="ep" id="relative">Relative<div class="ep" id="absolute">Absolute</div></div>
+<div class="ep">Normal</div>
+<div class="ep">Normal</div>
+<div class="ep">Normal</div>
+
+
+</body>
+</html>

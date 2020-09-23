@@ -1,0 +1,157 @@
+body, html{
+    padding: 0;
+    margin: 0px;
+    font-family: verdana,sans-serif;
+}
+main{
+    width: 100%;
+    display: inline-block;
+    position: fixed;
+}
+.navbar{
+    width: 100%;
+    background: #4568DC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B06AB3, #4568DC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-bottom: 2px solid linear-gradient(to right, #B06AB3, #4568DC);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+    margin: 0px;
+    margin-top: 0px;
+}
+
+.navbar > ul{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar > ul li{
+    display: inline-block;
+}
+.navbar > ul li a{
+    text-decoration: none;
+    color: #fff;
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+    position: relative;
+}
+.navbar > ul li a::before {
+    background: #fff none repeat scroll 0 0;
+    bottom: -2px;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    transition: 0.5s;
+}
+.navbar > ul li a:hover::before{
+    width: 100%;
+}
+body {
+    background-image: url(image/BG1.jpg);
+    height: 100 ;
+}
+
+#box1{
+    display: inline-block;
+    margin-top: 100px;
+    width: 10%;
+    margin-left: 30px;
+    height: 400px;
+}
+#box2{
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center ;
+    margin-top: 100px;
+    display: inline-block;
+    margin-left: 220px;
+    width: 70%;
+    background:#B06AB3;
+    height: 400px;
+    -webkit-box-shadow: 3px 14px 5px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 3px 14px 5px 0px rgba(0,0,0,0.05);
+    box-shadow: 3px 14px 5px 0px rgba(0,0,0,0.05);
+
+}
+#demotext {
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 15px, rgb(255, 45, 149) 0px 0px 20px, rgb(255, 45, 149) 0px 0px 30px, rgb(255, 45, 149) 0px 0px 40px, rgb(255, 45, 149) 0px 0px 50px, rgb(255, 45, 149) 0px 0px 75px;
+    font-size: 30px;
+    text-align: center;
+}
+ #about {
+    border-radius: 20px;
+    -webkit-box-shadow: 3px 14px 5px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 3px 14px 5px 0px rgba(0,0,0,0.05);
+    box-shadow: 3px 14px 5px 0px rgba(0,0,0,0.05);
+    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-left: 5%; 
+    width:90%;
+    height: 300px;
+    background:#B06AB3;
+    
+}
+h1{
+    margin-left: 70px;
+}
+#ensa{
+     margin-top: 0px;
+     margin-left: 30px;
+    display: inline-block;
+    float: left ;
+}
+#p {
+    display: inline-block;
+    margin-left: 10px;
+}
+div.gallery {
+    margin-left: 100px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    float: left;
+    margin-right: 25px;
+    height: 200px;
+    width: 200px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    height: 200px;
+    width: 200px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.desc {
+    font-size: 20px;
+    font-weight: bold;
+    color: white ;
+}
+#img {
+    width: 300px;
+    height: 300px;
+}
+
+.new{
+    float: left;
+    margin-left: 30px;
+}
+#mr{
+    width: 320px;
+    height: 290px;
+    margin-top: 10px;
+    margin-left: 70px;
+}

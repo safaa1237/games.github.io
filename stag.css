@@ -1,0 +1,188 @@
+body {
+	background-color: pink ;
+	font-family: verdana,sans-serif;
+	color: black ;
+	font-size: 50px;;
+	
+	
+}
+   #start {
+
+   	margin-top: 150px;
+   
+   }
+body, html{
+    padding: 0;
+    margin: 0px;
+    font-family: verdana,sans-serif;
+}
+main{
+    width: 100%;
+    display: inline-block;
+    position: fixed;
+}
+.navbar{
+	font-size: 15px;
+    width: 100%;
+    height: 60px;
+    background: #4568DC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B06AB3, #4568DC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-bottom: 2px solid linear-gradient(to right, #B06AB3, #4568DC);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+    margin: 0px;
+    margin-top: 0px;
+}
+
+.navbar > ul{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar > ul li{
+    display: inline-block;
+}
+.navbar > ul li a{
+    text-decoration: none;
+    color: #fff;
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+    position: relative;
+}
+.navbar > ul li a::before {
+    background: #fff none repeat scroll 0 0;
+    bottom: -2px;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    transition: 0.5s;
+}
+.navbar > ul li a:hover::before{
+    width: 100%;
+}
+
+
+#box {
+	padding-top: 100px;
+	margin-top: 100px;
+	width: 80%;
+	height: 700px;
+	margin: auto ;
+	text-align: center ;
+	background-image:url(image/forrest.jpg);
+    border-width: 10px;
+
+}
+h1 {
+	color: white 
+}
+table {
+  margin: auto;
+  border-collapse: separate;
+  border-spacing: 50px 0;
+}
+td  {
+  padding: 10px 0;
+}
+
+#instruction {
+	margin-top: 100px;
+	width: 75%;
+	height: 500px;
+	margin: auto;
+	border: 2px ;
+	border-color: black ;
+}
+table.blueTable {
+	border-spacing: 50px;
+  padding: 100px;
+  border: 1px solid #000000;
+  background-color: #EEEEEE;
+  width: 55%;
+  margin: auto ;
+  height: 100px;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.blueTable td, table.blueTable th {
+  border: 5px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.blueTable tbody td {
+  font-size: 13px;
+}
+table.blueTable tr:nth-child(even) {
+  background: #F5F5F5;
+}
+table.blueTable td:nth-child(even) {
+  background: #F5F5F5;
+}
+table.blueTable thead {
+  background: #339E34;
+  background: -moz-linear-gradient(top, #66b667 0%, #47a748 66%, #339E34 100%);
+  background: -webkit-linear-gradient(top, #66b667 0%, #47a748 66%, #339E34 100%);
+  background: linear-gradient(to bottom, #66b667 0%, #47a748 66%, #339E34 100%);
+  border-bottom: 2px solid #444444;
+}
+table.blueTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #FFFFFF;
+}
+table.blueTable thead th:first-child {
+  border-left: none;
+}
+
+table.blueTable tfoot td {
+  font-size: 14px;
+}
+table.blueTable tfoot .links {
+  text-align: right;
+}
+table.blueTable tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#9fe6e5 0%,
+		#318f8d);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#9fe6e5),
+		to(#318f8d));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 0px solid #fdfffc;
+	-moz-box-shadow:
+		0px 1px 3px rgba(255,255,255,0.8),
+		inset 0px 0px 1px rgba(255,255,255,0);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(255,255,255,0.8),
+		inset 0px 0px 1px rgba(255,255,255,0);
+	box-shadow:
+		0px 1px 3px rgba(255,255,255,0.8),
+		inset 0px 0px 1px rgba(255,255,255,0);
+	text-shadow:
+		0px -1px 0px rgba(201,197,201,0.7),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
